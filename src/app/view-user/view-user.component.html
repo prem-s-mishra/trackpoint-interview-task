@@ -1,0 +1,37 @@
+<div class="container">
+    <app-nav-bar></app-nav-bar>
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-4 q">
+                    First Name
+                </div>
+                <div class="col-sm-8 a">
+                    {{userData.first_name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 q">
+                    Last Name
+                </div>
+                <div class="col-sm-8 a">
+                    {{userData.last_name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 q">
+                    email
+                </div>
+                <div class="col-sm-8 a">
+                    {{userData.email}}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <img src="{{userData.avatar}}">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button class="btn btn-danger" (click)="gotoList()">Back</button>
+    </div>
+</div>
